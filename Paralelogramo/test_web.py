@@ -11,7 +11,7 @@ def home() -> '302':
 
 @app.route('/entry/')
 def go_entry() -> 'html':
-    return render_template('entry.html', the_title='Welcome to the form')
+    return render_template('entry.html', the_title='Hola,Quieres saber cual es el perimetro del paralelogramo,ingresa los datos y calcula')
 
 @app.route("/calculate/", methods=['POST'])
 def calculate()->'html':
