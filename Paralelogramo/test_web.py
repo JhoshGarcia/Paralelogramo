@@ -18,7 +18,7 @@ def calculate()->'html':
     a = float(request.form['a'])
     b = float(request.form['b'])
     result = perimetro_paralelogramo(a,b)
-    title = "Perimetro from Paralelogramo result"
+    title = "El Perimetro from Paralelogramo es:"
     return render_template('result.html',
                            the_a=a,
                            the_b=b,
