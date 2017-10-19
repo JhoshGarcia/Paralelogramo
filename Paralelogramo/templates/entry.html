@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form action="/calculate/" method="post">
+        <table>
+            <tr>
+                <td>a:</td>
+                <td><input type="number" name="a"></input></td>
+                <td>b:</td>
+                <td><input type="number" name="b"></input></td>
+            </tr>
+            <p>usa este formulario para calcular el perimetro del Paralelogramo</p>
+
+            <p>Cuando este listo presione calcular </p>
+
+
+
+        </table>
+    <p><input type="submit" name="btn_calculate" value="calculate"></input></p>
+        </form>
+
+{% endblock %}
